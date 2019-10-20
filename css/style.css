@@ -1,0 +1,73 @@
+/* Standard html body. All document properties*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+/* Use '.' to denote a class: */
+.header {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+.call {
+  background-color: #2282C9;
+  padding: 60px 15px;
+}
+/* Modifying a specific item inside a class */
+.call h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+}
+.realty {
+  max-width: 700px;
+  height: auto;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.realty img {
+  max-width: 100%;
+  height: auto;
+}
+
+.realty article {
+  margin: 20px 0px;
+}
+
+.realty h2 {
+  font-size: 20px;
+  color: #686868;
+  margin-bottom: 25px;
+}
+.realty .button {
+  padding: 10px 15px;
+  background-color: #127d00;
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (min-width: 700px){
+  .call {
+    padding: 120px 15px;
+  }
+
+  .call h1 {
+    font-size: 54px;
+  }
+
+  .realty {
+    float: left;
+    width: calc(60% - 200px);
+
+  }
+
+  article.realty:nth-child(even) {
+    margin: 0 20px;
+  }
+}
